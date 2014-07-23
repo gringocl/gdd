@@ -1,0 +1,14 @@
+User wants to know what the accumulated gdd is specific to their location.
+
+To accumulate gdd a location and a start date of accumulation are needed.
+
+User wants to be informed when the accumulated gdd is close to a specific number.
+
+An alarm threshold is needed with time before and target gdd.
+
+User can reset gdd accumulation and repeat process.
+
+Accumulated gdd totals, past daily gdd totals and gdd reset dates should be persisted.
+
+
+

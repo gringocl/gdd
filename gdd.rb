@@ -58,20 +58,3 @@ class Forecast
   end
 end
 
-class WeatherCalculation
-  attr_accessor :weather, :daily_max_temp, :daily_min_temp
-
-  def initialize(weather_data)
-    @weather = weatherify(weather_data)
-    @daily_max_temp = weather[:daily_max_temp]
-    @daily_min_temp = weather[:daily_min_temp]
-  end
-
-  def weatherify(weather_data)
-    { daily_max_temp: weather_data["temperatureMax"], daily_min_temp: weather_data["temperatureMin"] }
-  end
-
-  def gdd
-    (daily_max_temp + daily_min_temp) / 2 - 10
-  end
-end
